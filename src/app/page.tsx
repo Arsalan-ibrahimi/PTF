@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Sparkl from '@/components/sparkl'
+
 import Text from '@/components/text'
 import Hero from '@/components/hero'
 import Lamp from '@/components/lamp'
