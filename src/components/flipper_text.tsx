@@ -3,7 +3,7 @@ import { FlipWords } from "./ui/flip";
 import Text from '@/components/text_hero_generate'
 
 export default function FlipWordsDemo() {
-  const words = ["Wordpress-Designer","ReactDeveloper", "Programmer", "TechEnthusiast"];
+  const words = ["Wordpress-Designer","React-Developer", "Programmer", "Tech-Enthusiast"];
 
   return (
     <div className="h-[40rem] flex justify-center text-center items-center px-4">
