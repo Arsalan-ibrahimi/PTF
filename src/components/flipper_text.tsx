@@ -3,7 +3,7 @@ import { FlipWords } from "./ui/flip";
 import Text from '@/components/text_hero_generate'
 
 export default function FlipWordsDemo() {
-  const words = ["Wordpress-Designer","React-Developer", "Programmer", "Tech-Enthusiast"];
+  const words = ["Wordpress-Designer","ReactDeveloper", "Programmer", "TechEnthusiast"];
 
   return (
     <div className="h-[40rem] flex justify-center text-center items-center px-4">
@@ -12,7 +12,7 @@ export default function FlipWordsDemo() {
         <Text/>
         </div>
 
-        I'm a
+        {`I'm a`}
         <FlipWords words={words} /> 
       
       </div>
