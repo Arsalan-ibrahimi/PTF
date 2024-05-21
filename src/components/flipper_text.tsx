@@ -12,7 +12,7 @@ export default function FlipWordsDemo() {
         <Text/>
         </div>
 
-        {`I'm a`}
+        I am a
         <FlipWords words={words} /> 
       
       </div>
