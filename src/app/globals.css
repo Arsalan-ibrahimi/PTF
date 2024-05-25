@@ -75,3 +75,7 @@ animation-delay: 3s;
 Loader
 **/
 
+.bod
+{
+  user-select: none !important;
+}

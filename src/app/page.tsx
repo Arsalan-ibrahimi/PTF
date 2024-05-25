@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Left_trace from '@/components/left_scroll_indicator'
 import Bg_grid  from '@/components/grid'
+import Feature from '@/components/featured'
 
 
 export default function myPage()
@@ -11,6 +11,7 @@ export default function myPage()
         
         <Bg_grid/>
           
+         <Feature/> 
 
 
         </div>

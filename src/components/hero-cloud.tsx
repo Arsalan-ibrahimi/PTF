@@ -3,30 +3,29 @@ import IconCloud from "@/components/ui/cloud-icon";
 const slugs = [
   "typescript",
   "javascript",
-  "java",
   "react",
-
+"wordpress",
   "html5",
   "css3",
   "nodedotjs",
   "express",
   "nextdotjs",
   "prisma",
- 
+ "mysql",
+ "mongodb",
+ "postman",
+ "vim",
+ "xcode",
   "postgresql",
   "firebase",
- 
   "vercel",
-
   "docker",
   "git",
-
   "github",
-  "gitlab",
-
   "androidstudio",
- 
+  "vscode",
   "figma",
+  "adobexd"
 ];
 
 export default function IconCloudDemo() {
