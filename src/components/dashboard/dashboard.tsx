@@ -94,7 +94,7 @@ function handleCollapse() {
   });
 }
 
-export default function () {
+export default function Dashboard() {
   return (
     <div className="dash-ele-wrap h-full flex">
       <div className="uncollapsed sidebar z-2  border  bg-[#F6F5F2] flex flex-col justify-between">

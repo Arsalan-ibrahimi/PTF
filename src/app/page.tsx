@@ -15,7 +15,7 @@ import { useState, useEffect } from "react";
 **/
 
 
-export default function myPage()
+export default function MyPage()
 {
 
     const [isDashboardLoaded, setIsDashboardLoaded] = useState(false);

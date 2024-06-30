@@ -24,8 +24,8 @@ export default function StatsGrid() {
     const DiffIcon = stat.diff > 0 ? IconArrowUpRight : IconArrowDownRight;
 
     return (
-        <div className='text-white'>
-        <Group justify="space-between">
+      <div key={stat.title} className='text-white'>
+        <Group justify="space-between" >
           <Text size="xs" className={classes.title}>
             {stat.title}
           </Text>
@@ -43,7 +43,7 @@ export default function StatsGrid() {
         <Text fz="xs"  mt={7}>
           Compared to previous month
         </Text>
-        </div>
+      </div>
     );
   });
   return (
