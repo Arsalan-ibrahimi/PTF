@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+:root {
+  --text-color: rgb(52, 51, 51);
+}
+
+
+.profile-custom
+{
+
+    color: black;
+     width: 400px;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+}
+
+.picture
+{
+    width:40%;
+    margin: 10px;
+
+}
+.picture > img 
+{
+    border-radius: 5px;
+}
+
+.name-content >  h2
+{
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    color: var(--text-color);
+    font-weight: 600;
+}
+.designation >  h3 
+{
+    font-size: 0.7rem;
+    color: rgb(166, 165, 165);
+}
+
+.text-content
+{
+    margin: 10px;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:5px;
+}
+
+
+
+
+.button-wrap 
+{
+display: flex;
+gap: 0.3rem;
+}
+.button-wrap > button
+{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+}
+.button-wrap > .secondary
+{
+    border: 1px solid lightgrey;
+    padding: 0.4rem;
+    border-radius: 5px;
+    color:var(--text-color);
+}
+
+.button-wrap > .primary
+{
+    background: rgb(25, 187, 241);
+    padding: 0.4rem;
+    border-radius: 5px;
+    color:white;
+}
+
+.stat-wrap
+{
+    background: #f6f5f4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--text-color);
+    padding: 5px;
+
+
+}
+
+.title-prof
+{
+    font-size: 14px;
+    text-align: center;
+}
+
+.title-prof + div
+{
+    font-size:25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}

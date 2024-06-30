@@ -18,9 +18,7 @@ export default function FlipWordsDemo() {
         <Rotate/>
 
       </div>
-       <div className="absolute z-9000">
-       <IconCloud/>
-       </div>
+      
       
     </div>
   );

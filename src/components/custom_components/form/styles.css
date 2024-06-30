@@ -1,0 +1,103 @@
+:root{
+    /*===== Colores =====*/
+    --first-color: #1A73E8;
+    --input-color: #80868B;
+    --border-color: #DADCE0;
+  
+    /*===== Fuente y tipografia =====*/
+    --body-font: 'Roboto', sans-serif;
+    --normal-font-size: 1rem;
+    --small-font-size: .75rem;
+  }
+
+.form-wrapper
+{
+    display: flex;
+    width: 750px;
+    box-shadow: 1px 0px 6px 0px rgba(61, 61, 61, 0.1);
+    -webkit-box-shadow: 1px 0px 6px 0px rgba(8,4,4,0.1);
+    -moz-box-shadow: 1px 0px 6px 0px rgba(8,4,4,0.1);
+    margin: 0.5rem;
+    border-radius: 10px;
+    
+}
+
+
+.bg-wrap
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    background-image: url('./assets//bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding-left: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.wrp
+{
+  padding:10px;
+}
+
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input{
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  min-width: 100%;
+  padding: 8px 8px;
+  font-size: 16px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -webkit-appearance:none;
+}
+
+.label-float input:focus{
+  border: 2px solid #3951b2;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 15px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.label-float input:required:invalid + label{
+  color: red;
+}
+.label-float input:focus:required:invalid{
+  border: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+  content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  top: 0;
+  color: #3951b2;
+}
