@@ -20,15 +20,16 @@ import { useState, useEffect } from "react";
 export default function MyPage()
 {
 
-  const [loading, setLoading] = useState(true);
+    const [isDashboardLoaded, setIsDashboardLoaded] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-        setLoading(false);
-    }, 5000);
-
-    return () => clearTimeout(timer);
-}, []);
+    useEffect(() => {
+        // Simulate loading delay
+        const timeout = setTimeout(() => {
+          setIsDashboardLoaded(true);
+        }, 5000); // Adjust the delay time as needed
+    
+        return () => clearTimeout(timeout);
+      }, []);
  
     
 
@@ -38,9 +39,14 @@ export default function MyPage()
      
 
 
+     {isDashboardLoaded ? (
+        <>
         
-     {loading && <Loader />}
-     <NewHero />
+        <NewHero/>
+        </>
+      ) : (
+        <Loader />
+      )}
      
 
    
