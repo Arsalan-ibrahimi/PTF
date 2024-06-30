@@ -8,6 +8,7 @@ import Mobile from '@/components/dashboard/mobile'
 import Profile from '@/components/custom_components/profile/profile'
 import Blog from "@/components/custom_components/blog-post/blog";
 // import Form from "@/components/custom_components/form";
+import TextReveal from '@/components/text_hero_generate'
 import { useState, useEffect } from "react";
 /**<Bg_grid/>
   
@@ -33,9 +34,23 @@ export default function MyPage()
 
   return (
     
-    <div className="wrapper h-full  w-full mt-[5rem] ">
+    <div className="wrapper h-full  w-full ">
      
-      <Profile/>
+     <div className="w-full h-full outer z-[-2]">
+
+      <div className="below">
+        <Mobile/>
+      </div>
+     <div className="top ">
+
+        <TextReveal/>
+        <div className="w-full flex justify-center">
+
+        <p className="p-0 m-0 text-sm text-center  text-[#333237]  subtitle-text">A FULL STACK DEVELOPER</p>
+        </div>
+
+     </div>
+     </div>
 
    
 

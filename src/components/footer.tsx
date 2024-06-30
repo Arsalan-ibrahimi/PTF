@@ -6,7 +6,7 @@ import React from 'react'
 export default function Footer()
 {
   return(
-    <footer className='w-full  flex justify-between footer  pt-5 pb-5 px-3 '>
+    <footer className='w-full  flex justify-between items-center footer  pt-5 pb-5 px-3 '>
       <div className='detail-container w-[33%]  '>
         <div className=' flex items-center gap-1'>
         <div className='logo' >

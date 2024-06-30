@@ -29,7 +29,7 @@ export default function Navigation()
       };
     return(
         <div  className=''>
-      <div className='flex w-[100dvw]  position-sticky top-1 border-b-[1px] justify-between items-center  bg-white text-black  nav-stick pl-2 '>
+      <div className='flex w-[100dvw] z-10  position-sticky top-1 border-b-[1px] justify-between items-center  bg-white text-black  nav-stick pl-2 '>
         
           <div className=' w-[33%] mobile-hide'>
             <ul  className='item-link flex gap-2 items-center'>
@@ -58,7 +58,7 @@ export default function Navigation()
           </Button>
           <Button type="default" className='mobile-hide border-[#24292e] hover:bg-[#2b3137]' icon={<CodepenOutlined />} iconPosition='end'>
           </Button>
-        <svg onClick={showDrawer} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-menu text-black "><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg onClick={showDrawer} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-menu text-black hide-laptop "><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </div>
       </div>
       <div>
