@@ -352,3 +352,42 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
  /** style */
  
+
+@media screen and (max-width: 425px) {
+
+  .mobile-hide
+  {
+    display: none !important;
+  }
+
+  .mobile-full
+  {
+    width: 100%;
+  }
+
+  .mobile-show
+  {
+    display: block ;
+  }
+
+  .footer
+  {
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  .footer > div
+  {
+    width: 100% !important;
+  }
+
+  .detail-container >div
+  {
+    flex-direction: column;
+  }
+
+  .resume-footer
+  {
+  text-align: center !important;
+  }
+  /* CSS for mobile devices */
+}

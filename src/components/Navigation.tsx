@@ -31,7 +31,7 @@ export default function Navigation()
         <div  className=''>
       <div className='flex w-[100dvw]  position-sticky top-1 border-b-[1px] justify-between items-center  bg-white text-black  nav-stick pl-2 '>
         
-          <div className=' w-[33%]'>
+          <div className=' w-[33%] mobile-hide'>
             <ul  className='item-link flex gap-2 items-center'>
               <li className="nav-items link-style"><a href="">Home</a></li>
               <li className="nav-items link-style"><a href="">Projects</a></li>
@@ -39,7 +39,7 @@ export default function Navigation()
               <li className="nav-items link-style"><a href="">Contact</a></li>
             </ul>
           </div>
-        <div className='w-[33%]'>
+        <div className='w-[33%] mobile-full'>
           <div className="logowrap flex justify-center items-center gap-2 position-relative ">
           <p className='logo-name'>ARSALAN</p>
           <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg" className='position-absolute left-[50%]'>
@@ -51,22 +51,22 @@ export default function Navigation()
           <p className='logo-name'>IBRAHIMI</p>
           </div>
         </div>
-       <div  className=' links-menu flex gap-1 justify-end items-center px-2 text-black dark:text-white p-[0.8rem] px-2  w-[33%]'>
+       <div  className=' links-menu flex gap-1 justify-end items-center px-2 text-black dark:text-white p-[0.8rem] px-2  w-[33%] mobile-full'>
           <Search placeholder="search" style={{ width: 200 }} />
-       <Button type="primary" className='bg-[#24292e] hover:bg-[#2b3137]' icon={<GithubOutlined />} iconPosition='end'>
+       <Button type="primary" className='mobile-hide bg-[#24292e] hover:bg-[#2b3137]' icon={<GithubOutlined />} iconPosition='end'>
           My GitHub
           </Button>
-          <Button type="default" className='border-[#24292e] hover:bg-[#2b3137]' icon={<CodepenOutlined />} iconPosition='end'>
+          <Button type="default" className='mobile-hide border-[#24292e] hover:bg-[#2b3137]' icon={<CodepenOutlined />} iconPosition='end'>
           </Button>
-        <svg onClick={showDrawer} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-menu hidden"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg onClick={showDrawer} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-menu text-black "><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </div>
       </div>
       <div>
       <Drawer title="Arsalan's Portfolio" width={520} closable={false} onClose={onClose} open={open} 
       extra={
        
-        <Button  onClick={onClose} className='border-round'>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <Button  onClick={onClose} className='border-round text-black'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-x text-black"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </Button>
                  
       }

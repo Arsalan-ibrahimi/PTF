@@ -36,7 +36,7 @@ export default function MyPage()
     <div className="wrapper h-full  w-full mt-[5rem] ">
      
       <Profile/>
-      <Blog/>
+
    
 
     </div>
