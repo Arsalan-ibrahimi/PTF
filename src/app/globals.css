@@ -367,9 +367,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 {
   font-family: 'Arial' !important;
   font-size: 5dvw;
-  color: rgba(51, 50, 55, 0.5);
-  
-  
+  color: rgba(51, 50, 55, 0.7);
 
 }
 
@@ -410,7 +408,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
- /** style */
+ 
+
  
 
 @media screen and (max-width: 425px) {

@@ -6,4 +6,4 @@ export default function App() {
 <Spline scene="https://prod.spline.design/d7yPiT-LURUR32ZL/scene.splinecode" />
   );
 }
-//
+//<Spline scene="https://prod.spline.design/d7yPiT-LURUR32ZL/scene.splinecode" />

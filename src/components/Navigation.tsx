@@ -28,7 +28,7 @@ export default function Navigation()
         setChildrenDrawer(false);
       };
     return(
-        <div  className=''>
+        <div  className='navi z-1000'>
       <div className='flex w-[100dvw] z-10  position-sticky top-1 border-b-[1px] justify-between items-center  bg-white text-black  nav-stick pl-2 '>
         
           <div className=' w-[33%] mobile-hide'>
