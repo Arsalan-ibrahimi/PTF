@@ -11,6 +11,9 @@ import Loader from  '@/app/loader'
 // import TextReveal from '@/components/text_hero_generate'
 import NewHero from '@/components/hero-latest'
 import { useState, useEffect } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
+import AboutMe from "@/components/AboutMe";
+import Scrolldown from '@/components/scrolldown'
 /**<Bg_grid/>
   
  <Feature/> 
@@ -35,7 +38,8 @@ export default function MyPage()
 
   return (
     
-    <div className="wrapper h-full  w-full ">
+    <ParallaxProvider>
+    <div className="wrapper h-full  w-full relative">
      
 
 
@@ -43,6 +47,7 @@ export default function MyPage()
         <>
         
         <NewHero/>
+        
         </>
       ) : (
         <Loader />
@@ -50,8 +55,12 @@ export default function MyPage()
      
 
    
-
+     <div className="field  absolute bottom-[7vh]  left-[50%] translate-x-[-50%]">
+       <Scrolldown/>
+       </div>
     </div>
+    <AboutMe/>
+    </ParallaxProvider>
   )
 
 }
@@ -95,3 +104,6 @@ export default function MyPage()
 
 // </div>
 // </div>
+
+
+// window.scrollTo(0,0);
