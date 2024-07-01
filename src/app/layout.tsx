@@ -40,12 +40,12 @@ export default function RootLayout({
         <Navigation/>
         {children}
         <Footer/>
-          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          
+        </body>
+        <script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
       <script>
         AOS.init();
       </script>
-        </body>
-       
     </html>
   );
 }

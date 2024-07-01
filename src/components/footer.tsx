@@ -10,7 +10,8 @@ export default function Footer()
       
       <div className='w-full text-center text-[11px]'>Copyright © 2024 ARSALAN. All rights reserved.</div>
       
-
+      
     </footer>
   )
+  
 }

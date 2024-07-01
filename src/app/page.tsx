@@ -61,6 +61,7 @@ export default function MyPage()
     </div>
     <AboutMe/>
     </ParallaxProvider>
+    
   )
 
 }
