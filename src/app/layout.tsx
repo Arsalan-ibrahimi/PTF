@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from '@/components/Navigation';
 import Favicon from "@/app/favicon.ico"
-
+import Script from 'next/script'
 
 import { useEffect, useState } from "react";
 import Footer from "@/components/footer";
@@ -42,7 +42,8 @@ export default function RootLayout({
         <Footer/>
           
         </body>
-        <script src="https://unpkg.com/aos@next/dist/aos.js" async></script>
+        <Script src="https://unpkg.com/aos@next/dist/aos.js" />
+        
       <script>
         AOS.init();
       </script>
