@@ -1,10 +1,13 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Button, Drawer, Space, FloatButton} from 'antd'
 // import BurgerIcon from '@/img/icons/menu.svg'
 import {CommentOutlined, InstagramOutlined,LinkedinFilled, SearchOutlined, GithubOutlined,CodepenOutlined,MailOutlined, MailFilled, InstagramFilled} from '@ant-design/icons'
 import Search from 'antd/es/input/Search'
 // import MyLogo from '@/img/icons/mylogo.svg'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 function openCodepen() {
@@ -32,6 +35,9 @@ function openinstagram()
 
 export default function Navigation()
 {
+  useEffect(() => {
+        AOS.init({});
+  },[]);
     const [open, setOpen] = React.useState(false);
     const [Floatopen, setFloatOpen] = React.useState(false);
     const [childrenDrawer, setChildrenDrawer] = React.useState(false);
@@ -51,6 +57,7 @@ export default function Navigation()
         setChildrenDrawer(false);
       };
     return(
+      
         <div data-aos="fade-down"  data-aos-delay="3000"
         data-aos-duration="2000"
         data-aos-easing="ease-in-out" className='navi z-1000'>

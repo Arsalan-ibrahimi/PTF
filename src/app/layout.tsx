@@ -42,11 +42,7 @@ export default function RootLayout({
         <Footer/>
           
         </body>
-        <Script src="https://unpkg.com/aos@next/dist/aos.js" />
-        
-      <script>
-        AOS.init();
-      </script>
+       
     </html>
   );
 }
